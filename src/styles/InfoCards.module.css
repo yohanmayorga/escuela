@@ -1,0 +1,50 @@
+.body {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 15px;
+  max-width: 25vw;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.number {
+  font-size: clamp(2rem, 3vw, 5rem);
+  font-weight: bold;
+  color: #5bbcff;
+}
+
+.title {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardBody:hover {
+  scale: 1.03;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .cardBody {
+    max-width: 90%;
+  }
+}
