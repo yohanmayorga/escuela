@@ -7,7 +7,7 @@ import logo from "@/../../public/assets/logo.png";
 const Info = () => {
   return (
     <div className={styles.body}>
-      <h1>
+      <h1 className={styles.quote}>
         “Cita que identifica el objetivo y la misión de la Escuela Básica
         Nacional Carmen Maizo de Bello”.
       </h1>

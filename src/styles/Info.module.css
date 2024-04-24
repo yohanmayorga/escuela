@@ -23,6 +23,10 @@
   max-width: 50%;
 }
 
+.quote {
+  text-align: center;
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -45,15 +49,18 @@
     max-width: 90%;
     margin: auto;
   }
-  .container {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-  }
   .left {
     max-width: 100%;
   }
   .right {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
   }
 }

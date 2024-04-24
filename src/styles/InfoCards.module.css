@@ -43,7 +43,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .cardBody {
     max-width: 90%;
   }
