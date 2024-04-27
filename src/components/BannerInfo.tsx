@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "@/styles/Info.module.css";
+import styles from "@/styles/BannerInfo.module.css";
 import InfoCards from "@/components/InfoCards";
 import Image from "next/image";
 import logo from "@/../../public/assets/logo.png";
 
-const Info = () => {
+const BannerInfo = () => {
   return (
     <div className={styles.body}>
       <h1 className={styles.quote}>
@@ -29,4 +29,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default BannerInfo;
