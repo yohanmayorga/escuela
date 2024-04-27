@@ -33,7 +33,7 @@ const MobileNavbar = () => {
       </div>
 
       <div className={styles.menuBody}>
-        {showMenu && <div className={styles.menuBox}>Hola</div>}
+        {showMenu && <div className={styles.container}>Hola</div>}
       </div>
     </div>
   );
