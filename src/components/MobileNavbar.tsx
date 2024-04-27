@@ -15,9 +15,24 @@ import { comunidad } from "@/utils/utilsNavbar";
 
 const MobileNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showSubmenu, setShowSubmenu] = useState(false);
+  const [id, setId] = useState("");
 
   const handleClick = () => {
     return setShowMenu(!showMenu);
+  };
+
+  const handleSubmenu = (name: any) => {
+    setId(name);
+    if (showSubmenu) {
+      if (name === id) {
+        setShowSubmenu(false);
+      } else {
+        return showSubmenu;
+      }
+    } else {
+      setShowSubmenu(!showSubmenu);
+    }
   };
 
   return (
@@ -44,12 +59,50 @@ const MobileNavbar = () => {
           <div className={styles.container}>
             <div className={styles.links}>
               <span className={styles.link}>
-                <span className={styles.linkItem}>
+                <span
+                  className={styles.linkItem}
+                  onClick={() => handleSubmenu("nosotros")}
+                >
                   Nosotros
                   <IoMdArrowDropdownCircle />
                 </span>
-                <div className={styles.subMenu}>
+                <div
+                  className={
+                    showSubmenu && id === "nosotros"
+                      ? styles.subMenu
+                      : styles.hide
+                  }
+                >
                   {nosotros.map((item: any) => {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.link}
+                        className={styles.link2}
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </span>
+
+              <span className={styles.link}>
+                <span
+                  className={styles.linkItem}
+                  onClick={() => handleSubmenu("oferta")}
+                >
+                  Oferta académica
+                  <IoMdArrowDropdownCircle />
+                </span>
+                <div
+                  className={
+                    showSubmenu && id === "oferta"
+                      ? styles.subMenu
+                      : styles.hide
+                  }
+                >
+                  {oferta.map((item: any) => {
                     return (
                       <Link
                         key={item.name}
