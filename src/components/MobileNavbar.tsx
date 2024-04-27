@@ -20,7 +20,12 @@ const MobileNavbar = () => {
   const [id, setId] = useState("");
 
   const handleClick = () => {
-    return setShowMenu(!showMenu);
+    if (showMenu) {
+      setShowMenu(!showMenu);
+      setId("");
+    } else {
+      setShowMenu(!showMenu);
+    }
   };
 
   const handleSubmenu = (name: any) => {
@@ -53,6 +58,7 @@ const MobileNavbar = () => {
   };
   const ref = useOutsideClick(() => {
     setShowMenu(false);
+    setId("");
   });
 
   return (
