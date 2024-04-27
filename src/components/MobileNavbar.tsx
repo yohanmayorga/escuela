@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "@/styles/MobileNavbar.module.css";
 import logo from "@/../../public/assets/logo.png";
 import Image from "next/image";
@@ -36,6 +36,25 @@ const MobileNavbar = () => {
     }
   };
 
+  const useOutsideClick = (callback: () => void) => {
+    const ref = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
+          callback();
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [callback]);
+    return ref;
+  };
+  const ref = useOutsideClick(() => {
+    setShowMenu(false);
+  });
+
   return (
     <div className={styles.body}>
       <div className={styles.header}>
@@ -57,7 +76,7 @@ const MobileNavbar = () => {
 
       <div className={styles.menuBody}>
         {showMenu && (
-          <div className={styles.container}>
+          <div ref={ref} className={styles.container}>
             <div className={styles.links}>
               <span className={styles.link}>
                 <span
