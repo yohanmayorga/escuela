@@ -24,11 +24,7 @@ const MobileNavbar = () => {
           </div>
         </div>
         <div className={styles.right} onClick={() => handleClick()}>
-          {showMenu ? (
-            <IoClose className={styles.menu} />
-          ) : (
-            <IoMenu className={styles.menu} />
-          )}
+          {showMenu ? "x" : <IoMenu className={styles.menu} />}
         </div>
       </div>
     </div>
