@@ -84,7 +84,8 @@
 }
 
 .linkItem {
-  color: white;
+  color: #1e1e1e;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
