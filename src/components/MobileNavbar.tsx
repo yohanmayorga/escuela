@@ -6,6 +6,7 @@ import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
+import { IoMdArrowDropupCircle } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import { nosotros } from "@/utils/utilsNavbar";
@@ -64,7 +65,11 @@ const MobileNavbar = () => {
                   onClick={() => handleSubmenu("nosotros")}
                 >
                   Nosotros
-                  <IoMdArrowDropdownCircle />
+                  {showSubmenu && id === "nosotros" ? (
+                    <IoMdArrowDropupCircle />
+                  ) : (
+                    <IoMdArrowDropdownCircle />
+                  )}
                 </span>
                 <div
                   className={
@@ -93,7 +98,11 @@ const MobileNavbar = () => {
                   onClick={() => handleSubmenu("oferta")}
                 >
                   Oferta académica
-                  <IoMdArrowDropdownCircle />
+                  {showSubmenu && id === "oferta" ? (
+                    <IoMdArrowDropupCircle />
+                  ) : (
+                    <IoMdArrowDropdownCircle />
+                  )}
                 </span>
                 <div
                   className={
@@ -103,6 +112,72 @@ const MobileNavbar = () => {
                   }
                 >
                   {oferta.map((item: any) => {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.link}
+                        className={styles.link2}
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </span>
+
+              <span className={styles.link}>
+                <span
+                  className={styles.linkItem}
+                  onClick={() => handleSubmenu("admision")}
+                >
+                  Admisión
+                  {showSubmenu && id === "admision" ? (
+                    <IoMdArrowDropupCircle />
+                  ) : (
+                    <IoMdArrowDropdownCircle />
+                  )}
+                </span>
+                <div
+                  className={
+                    showSubmenu && id === "admision"
+                      ? styles.subMenu
+                      : styles.hide
+                  }
+                >
+                  {admision.map((item: any) => {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.link}
+                        className={styles.link2}
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </span>
+
+              <span className={styles.link}>
+                <span
+                  className={styles.linkItem}
+                  onClick={() => handleSubmenu("comunidad")}
+                >
+                  Comunidad
+                  {showSubmenu && id === "comunidad" ? (
+                    <IoMdArrowDropupCircle />
+                  ) : (
+                    <IoMdArrowDropdownCircle />
+                  )}
+                </span>
+                <div
+                  className={
+                    showSubmenu && id === "comunidad"
+                      ? styles.subMenu
+                      : styles.hide
+                  }
+                >
+                  {comunidad.map((item: any) => {
                     return (
                       <Link
                         key={item.name}
