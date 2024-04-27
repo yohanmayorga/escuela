@@ -48,3 +48,9 @@
 .menu {
   font-size: 200%;
 }
+
+@media (min-width: 1200px) {
+  .body {
+    display: none;
+  }
+}
