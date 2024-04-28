@@ -8,6 +8,7 @@ import { IoClose } from "react-icons/io5";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { IoMdArrowDropupCircle } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
 import Link from "next/link";
 import { nosotros } from "@/utils/utilsNavbar";
 import { oferta } from "@/utils/utilsNavbar";
@@ -216,12 +217,11 @@ const MobileNavbar = () => {
                 </div>
               </span>
 
-              <Link href="#" className={styles.link}>
-                <span className={styles.button}>
-                  <MdOutlineEmail />
-                  Contacto
-                </span>
-              </Link>
+              <div className={styles.bottom}>
+                <div className={styles.bottomItem}>
+                  <FaPhone /> (0212)-1234567
+                </div>
+              </div>
             </div>
           </div>
         )}

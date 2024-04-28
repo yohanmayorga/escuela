@@ -126,3 +126,19 @@
 .hide {
   display: none;
 }
+
+.bottom {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bottomItem {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
