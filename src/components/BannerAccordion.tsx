@@ -5,7 +5,7 @@ import { accordion } from "@/utils/utilsAccordion";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { MdQuestionAnswer } from "react-icons/md";
-import Background from "@/../../public/assets/background.jpg";
+import Question from "@/../../public/assets/Question.png";
 import Image from "next/image";
 
 const BannerAccordion = () => {
@@ -21,11 +21,12 @@ const BannerAccordion = () => {
     <div className={styles.body}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <Image src={Background} alt="picture" className={styles.picture} />
+          <Image src={Question} alt="picture" className={styles.picture} />
         </div>
+
         <div className={styles.center}>
           <h1 className={styles.quote}>
-            <MdQuestionAnswer />
+            <MdQuestionAnswer className={styles.icon} />
             Preguntas frecuentes.
           </h1>
           <div className={styles.accordion}>
@@ -48,10 +49,12 @@ const BannerAccordion = () => {
             })}
           </div>
         </div>
+
         <div className={styles.right}>
-          <Image src={Background} alt="picture" className={styles.picture} />
+          <Image src={Question} alt="picture" className={styles.picture} />
         </div>
       </div>
+
       <div className={styles.customShape}>
         <svg
           data-name="Layer 1"

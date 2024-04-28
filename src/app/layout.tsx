@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
+import { Arimo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MobileNavbar from "@/components/MobileNavbar";
 
-const inter = Archivo({ subsets: ["latin"] });
+const inter = Arimo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "E.B.N. Carmen Maizo de Bello.",

@@ -22,6 +22,8 @@
   background: #5bbcff;
   width: 100%;
   margin-bottom: -1px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .left {
@@ -29,7 +31,6 @@
 }
 
 .center {
-  padding-left: 10%;
   min-width: 50%;
   display: flex;
   flex-direction: column;
@@ -42,14 +43,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 10%;
 }
 
 .picture {
-  width: 50%;
+  width: 45%;
   height: auto;
   margin: 1rem;
   border-radius: 15px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .accordion {
@@ -61,24 +63,35 @@
   margin-bottom: 0.5rem;
 }
 
+.icon {
+  color: yellow;
+}
+
 .question {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
   align-items: center;
+  justify-content: space-between;
   font-weight: bold;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding: 0.3rem;
   cursor: pointer;
-  border-bottom: 1px solid #dcdcdc;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.question:hover {
+  color: #5bbcff;
 }
 
 .answerShow {
   display: flex;
   padding-bottom: 1rem;
   padding-top: 0.3rem;
-  background: white;
   animation: animated 0.3s ease-in-out;
+  color: white;
 }
 
 @keyframes animated {
@@ -111,7 +124,8 @@
     justify-content: center;
   }
   .picture {
-    width: 90%;
+    height: 30vh;
+    width: auto;
   }
   .accordion {
     width: 90%;
@@ -138,7 +152,7 @@
   position: relative;
   display: block;
   width: 250%;
-  height: 100%;
+  height: 101%;
   transform: rotateY(180deg);
 }
 

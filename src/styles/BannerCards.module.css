@@ -33,6 +33,8 @@
   height: 10vh;
   width: auto;
   margin-top: -2.5rem;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .title {
@@ -62,7 +64,7 @@
 }
 
 .button {
-  background: white;
+  background: yellow;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

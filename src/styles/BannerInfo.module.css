@@ -49,6 +49,8 @@
 .logo {
   height: 30vh;
   width: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 @media (max-width: 1200px) {

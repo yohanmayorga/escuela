@@ -5,6 +5,7 @@ import background from "@/../../public/assets/background.jpg";
 import BannerCards from "@/components/BannerCards";
 import BannerInfo from "@/components/BannerInfo";
 import BannerAccordion from "@/components/BannerAccordion";
+import BannerContact from "@/components/BannerContact";
 
 const Banner = () => {
   return (
@@ -13,6 +14,7 @@ const Banner = () => {
       <BannerCards />
       <BannerInfo />
       <BannerAccordion />
+      <BannerContact />
     </div>
   );
 };
