@@ -99,7 +99,9 @@ const MobileNavbar = () => {
               <span>E.B.N.</span>
               <span>Carmen Maizo de Bello</span>
             </div>
+
             <div className={styles.links}>
+              <div className={styles.subtitle}>Enlaces</div>
               <span className={styles.link}>
                 <span
                   className={styles.linkItem}
@@ -234,17 +236,18 @@ const MobileNavbar = () => {
             </div>
 
             <div className={styles.bottom}>
+              <div className={styles.subtitle}>Contacto</div>
               <div className={styles.bottomItem}>
-                <FaPhone /> (0212)-1234567
+                <FaPhone className={styles.icon} /> (0212)-1234567
               </div>
               <div className={styles.bottomItem}>
-                <MdOutlineEmail /> correo@gmail.com
+                <MdOutlineEmail className={styles.icon} /> correo@gmail.com
               </div>
               <div className={styles.bottomItem}>
-                <IoMdTime /> 08:00 am - 04:00 pm
+                <IoMdTime className={styles.icon} /> 08:00 am - 04:00 pm
               </div>
               <div className={styles.bottomItem}>
-                <FaMapMarkedAlt /> El Valle - Caracas
+                <FaMapMarkedAlt className={styles.icon} /> El Valle - Caracas
               </div>
             </div>
           </div>
