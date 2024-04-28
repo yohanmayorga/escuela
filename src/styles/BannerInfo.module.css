@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 .container {
@@ -15,6 +16,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .left {
@@ -27,6 +30,8 @@
 
 .quote {
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .right {
@@ -48,7 +53,6 @@
 
 @media (max-width: 1200px) {
   .body {
-    width: 90%;
     margin: auto;
   }
   .container {
@@ -62,4 +66,25 @@
   .right {
     max-width: 100%;
   }
+}
+
+.customShape {
+  bottom: 0;
+  height: 10vh;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  transform: rotate(180deg);
+  border: none;
+}
+
+.customShape svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+.customShape .fill {
+  fill: #5bbcff;
 }
