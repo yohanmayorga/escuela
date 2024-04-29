@@ -18,7 +18,7 @@ import { admision } from "@/utils/utilsNavbar";
 import { comunidad } from "@/utils/utilsNavbar";
 
 const MobileNavbar = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const [showSubmenu, setShowSubmenu] = useState(false);
   const [id, setId] = useState("");
 
