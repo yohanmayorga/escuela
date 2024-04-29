@@ -67,13 +67,15 @@ const MobileNavbar = () => {
   return (
     <div className={styles.body}>
       <div className={styles.header}>
-        <div className={styles.left}>
-          <Image src={logo} alt="logo" className={styles.logo} />
-          <div className={styles.titles}>
-            <span>E.B.N.</span>
-            <span>Carmen Maizo de Bello</span>
+        <Link href="/" className={styles.link}>
+          <div className={styles.left}>
+            <Image src={logo} alt="logo" className={styles.logo} />
+            <div className={styles.titles}>
+              <span>E.B.N.</span>
+              <span>Carmen Maizo de Bello</span>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className={styles.right} onClick={() => handleClick()}>
           {showMenu ? (
             <IoClose className={styles.menu} />
