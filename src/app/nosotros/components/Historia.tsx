@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "@/app/nosotros/styles/Historia.module.css";
-import background from "@/../../public/assets/background.jpg";
+import Escuela1 from "@/../../public/assets/Escuela.jpeg";
 import Image from "next/image";
 
 const Historia = () => {
   return (
     <div className={styles.body}>
       <div className={styles.left}>
-        <Image src={background} alt="escuela" className={styles.picture} />
+        <Image src={Escuela1} alt="escuela" className={styles.picture} />
       </div>
       <div className={styles.right}>
         <h1 className={styles.title}>Nuestra historia</h1>
