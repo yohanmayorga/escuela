@@ -14,13 +14,15 @@ import { comunidad } from "@/utils/utilsNavbar";
 const Navbar = () => {
   return (
     <div className={styles.body}>
-      <div className={styles.left}>
-        <Image src={logo} alt="logo" className={styles.logo} />
-        <div className={styles.titles}>
-          <span>E.B.N.</span>
-          <span>Carmen Maizo de Bello</span>
+      <Link href="/" className={styles.link}>
+        <div className={styles.left}>
+          <Image src={logo} alt="logo" className={styles.logo} />
+          <div className={styles.titles}>
+            <span>E.B.N.</span>
+            <span>Carmen Maizo de Bello</span>
+          </div>
         </div>
-      </div>
+      </Link>
       <div className={styles.right}>
         <div className={styles.phone}>
           <FaPhone className={styles.icon} />
@@ -29,10 +31,12 @@ const Navbar = () => {
 
         <div className={styles.links}>
           <span className={styles.link}>
-            <span className={styles.linkItem}>
-              Nosotros
-              <IoMdArrowDropdownCircle />
-            </span>
+            <Link href="/nosotros" className={styles.link}>
+              <span className={styles.linkItem}>
+                Nosotros
+                <IoMdArrowDropdownCircle />
+              </span>
+            </Link>
             <div className={styles.subMenu}>
               {nosotros.map((item: any) => {
                 return (

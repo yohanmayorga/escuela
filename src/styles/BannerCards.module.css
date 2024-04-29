@@ -64,7 +64,7 @@
 }
 
 .button {
-  background: yellow;
+  background: white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
