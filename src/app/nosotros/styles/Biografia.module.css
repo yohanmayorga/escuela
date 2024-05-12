@@ -69,8 +69,8 @@
 }
 
 .scrollImage {
-  width: 30%;
-  height: auto;
+  height: 10vh;
+  width: auto;
 }
 
 .scroll span {
