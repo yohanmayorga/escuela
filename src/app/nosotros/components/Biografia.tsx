@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Biografia = () => {
   return (
-    <div className={styles.body}>
+    <div id="biografia" className={styles.body}>
       <div className={styles.subtitleBox}>
         <span className={styles.subtitle}>Carmen Maizo de Bello</span>
       </div>

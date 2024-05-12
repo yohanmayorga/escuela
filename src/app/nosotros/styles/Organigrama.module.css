@@ -1,0 +1,62 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 5rem;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+}
+
+.subtitleBox {
+  width: 100%;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.subtitle {
+  font-size: clamp(2rem, 8vw, 80px);
+  font-weight: bold;
+  color: #5bbcff;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #5bbcff;
+  border-radius: 15px;
+  width: calc(20vw - 1rem);
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-top: -2.5rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .cardBody {
+    width: calc(40vw - 1rem);
+  }
+}

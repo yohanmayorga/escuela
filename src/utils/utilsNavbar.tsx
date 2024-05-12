@@ -2,22 +2,22 @@ export const nosotros = [
   {
     id: 1,
     name: "Historia",
-    link: "#",
+    link: "/nosotros/#historia",
   },
   {
     id: 2,
     name: "Carmen Maizo de Bello",
-    link: "#",
+    link: "/nosotros/#biografia",
   },
   {
     id: 3,
     name: "Misión y visión",
-    link: "#",
+    link: "/nosotros/#mision",
   },
   {
     id: 4,
     name: "Organigrama",
-    link: "#",
+    link: "/nosotros/#organigrama",
   },
   {
     id: 5,

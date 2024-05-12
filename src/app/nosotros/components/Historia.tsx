@@ -8,7 +8,7 @@ import { PiStudentBold } from "react-icons/pi";
 
 const Historia = () => {
   return (
-    <div className={styles.body}>
+    <div id="historia" className={styles.body}>
       <div className={styles.titleBox}>
         <span className={styles.title}>Nosotros</span>
       </div>

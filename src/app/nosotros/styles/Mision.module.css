@@ -1,0 +1,75 @@
+.body {
+  min-height: max-content;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.subtitleBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.subtitle {
+  font-size: clamp(2rem, 8vw, 80px);
+  font-weight: bold;
+  color: #5bbcff;
+}
+
+.sides {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  width: auto;
+  height: 30vh;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 40px);
+  font-weight: bold;
+}
+
+.side span {
+  max-width: 70%;
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .sides {
+    flex-direction: column;
+  }
+  .side {
+    width: 100%;
+  }
+  .picture {
+    width: 100%;
+    height: auto;
+  }
+  .side span {
+    min-width: 100%;
+  }
+}

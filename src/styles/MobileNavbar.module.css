@@ -51,7 +51,7 @@
   font-size: 200%;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 1201px) {
   .body {
     display: none;
   }
