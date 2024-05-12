@@ -85,6 +85,7 @@
 }
 
 .customShape {
+  margin-top: -1px;
   bottom: 0;
   height: 6vh;
   left: 0;
